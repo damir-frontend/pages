@@ -1,0 +1,39 @@
+.switcher {
+  position: absolute;
+  left: 165px;
+  top: 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4),
+    // внешняя тень снизу-справа
+    -2px -2px 4px rgba(255, 255, 255, 0.2),
+    // свет сверху-слева
+    inset 1px 1px 2px rgba(0, 0, 0, 0.3),
+    // внутренняя тень снизу-справа
+    inset -1px -1px 2px rgba(255, 255, 255, 0.3); // внутренняя подсветка сверху-слева
+  cursor: pointer;
+  img {
+    width: 15px;
+    height: 15px;
+    margin: 12.5px;
+  }
+}
+
+.wrapper {
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.95));
+}
+
+.disable {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.disable:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: not-allowed;
+}
